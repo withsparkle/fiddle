@@ -1,0 +1,13 @@
+# goreleaser artifacts
+/dist/
+
+# third-party dependencies
+/vendor/
+
+# code coverage and quality reports
+/*.out
+
+# sensitive data
+private.env
+private.hosts
+http-client.private.env.json
