@@ -13,6 +13,7 @@ include=(
   bin/lib/git/*.bash
   bin/lib/runtime/*.bash
   bin/lib/tools/tools.bash
+  bin/lib/tools/*.bash
   bin/lib/utils/*.bash
   bin/lib/main.bash
 )
