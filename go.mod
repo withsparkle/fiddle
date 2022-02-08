@@ -8,7 +8,6 @@ require (
 	github.com/spf13/cobra v1.7.0
 	github.com/stretchr/testify v1.8.4
 	go.octolab.org v0.12.2
-	go.octolab.org/template/tool v0.0.0-20230621093614-d2ba03535497
 	go.octolab.org/toolkit/cli v0.6.3
 	go.octolab.org/toolkit/config v0.0.4
 )

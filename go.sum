@@ -267,8 +267,6 @@ go.etcd.io/etcd/client/v2 v2.305.0/go.mod h1:h9puh54ZTgAKtEbut2oe9P4L/oqKCVB6xsX
 go.octolab.org v0.12.0/go.mod h1:TEYR7HOfImJq8AsoCcl9JBK+80t4QBY4EilGxMtscNE=
 go.octolab.org v0.12.2 h1:jMSZYYDQ2lvHPg+8c9wCJKGTuCFe/sOsjLxAFGvdb+Q=
 go.octolab.org v0.12.2/go.mod h1:tKGYosAOwKnM+kgRJEZC7b8vp829okhEl+7geOrEEjU=
-go.octolab.org/template/tool v0.0.0-20230621093614-d2ba03535497 h1:+EwEf9L1CVwcOSElIU/aVwpHhOInKdfzXEHmJHm+vxY=
-go.octolab.org/template/tool v0.0.0-20230621093614-d2ba03535497/go.mod h1:Kfsutih6Uzd6zWhSIeiEXwBXAyuY4v5YeklBdcCwmG0=
 go.octolab.org/toolkit/cli v0.6.3 h1:PXQ5FTolES3g61n402MWV2KTYSFUUWCnn/5Npl/bmGs=
 go.octolab.org/toolkit/cli v0.6.3/go.mod h1:bfeQzJzBzEBXeU8JJZu0WfffuUriAqwJEg1hf2vhfeY=
 go.octolab.org/toolkit/config v0.0.4 h1:Q/MnSuRf4ttHCuAaq7PqpD8xQhEtmfK8mO9NX1IxvlA=
