@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+run() {
+  "$(git rev-parse --show-toplevel)/Taskfile" "$@"
+}
+
+pushd "$(git rev-parse --show-toplevel)/tests/drafts"
+trap popd EXIT
+
+for i in {145..150}; do
+  run html2md \
+    -i "https://mailchi.mp/deararchitects/${i}-dear-architects" \
+    -s 'table.mcnImageCardBlock,table.mcnCaptionBlock' >"deararchitects/${i}.md"
+done
