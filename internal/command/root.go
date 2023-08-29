@@ -1,30 +1,20 @@
 package command
 
-import (
-	"github.com/spf13/cobra"
-
-	"go.octolab.org/toolset/fiddle/internal/command/demo"
-)
+import "github.com/spf13/cobra"
 
 // New returns the new root command.
 func New() *cobra.Command {
 	command := cobra.Command{
-		Use:   "%template%",
-		Short: "%template%",
-		Long:  "%template%",
-
-		Args: cobra.NoArgs,
+		Use:   "fiddle",
+		Short: "the missing RSS manager",
+		Long:  "🎻 The missing RSS manager.",
+		Args:  cobra.NoArgs,
 
 		SilenceErrors: false,
 		SilenceUsage:  true,
 	}
 
-	/* configure instance */
-	command.AddCommand(
-		demo.Panic(),
-		demo.Stderr(),
-		demo.Stdout(),
-	)
+	command.AddCommand(Read(), Watch())
 
 	return &command
 }

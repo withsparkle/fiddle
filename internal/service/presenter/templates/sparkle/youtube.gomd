@@ -1,0 +1,20 @@
+---
+uid: {{ .ID }}
+url: {{ .URL }}
+tags: {{ range $tag := .Tags }}
+  - {{ $tag -}}
+{{ end }}
+date: {{ .Date }}
+---
+
+# {{ .Title }}
+
+![]({{.URL}})
+
+## Description
+
+{{ .Desc | markdownify }}
+
+## Summary
+
+{{ .Summary | markdownify }}

@@ -1,44 +1,42 @@
-project_name: tool #find-and-replace:template
+project_name: fiddle
 
 archives:
-  - id: tool #find-and-replace:template
+  - id: fiddle
     files:
       - LICENSE
     format: tar.gz
-    name_template: "{{.Binary}}_{{.Version}}_{{.Os}}-{{.Arch}}"
-    rlcp: true
+    name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}-{{.Arch}}"
 
 brews:
-  - name: tool #find-and-replace:template
-    caveats: An example of the goreleaser usage.
+  - name: fiddle
     commit_author:
       name: Kamil Samigullin
       email: kamil@samigullin.info
-    description: Template for a typical CLI-tool written on Go.
+    description: The missing RSS manager.
     folder: Formula
-    homepage: https://go-tool.octolab.org/
-    tap:
+    homepage: https://fiddle.octolab.org/
+    repository:
       owner: octolab
       name: homebrew-tap
     install: |
-      bin.install "tool" #find-and-replace:template
+      bin.install "fiddle"
 
-      output = Utils.popen_read("#{bin}/tool completion bash")
-      (bash_completion/"tool").write output
+      output = Utils.popen_read("#{bin}/fiddle completion bash")
+      (bash_completion/"fiddle").write output
 
-      output = Utils.popen_read("#{bin}/tool completion fish")
-      (fish_completion/"tool.fish").write output
+      output = Utils.popen_read("#{bin}/fiddle completion fish")
+      (fish_completion/"fiddle.fish").write output
 
-      output = Utils.popen_read("#{bin}/tool completion zsh")
-      (zsh_completion/"_tool").write output
+      output = Utils.popen_read("#{bin}/fiddle completion zsh")
+      (zsh_completion/"_fiddle").write output
 
       prefix.install_metafiles
     test: |
-      system "#{bin}/tool version"
+      system "#{bin}/fiddle version"
 
 builds:
-  - id: tool #find-and-replace:template
-    binary: tool
+  - id: fiddle
+    binary: fiddle
     env:
       - CGO_ENABLED=0
     flags:
@@ -57,5 +55,5 @@ checksum: { name_template: checksums.txt }
 
 release:
   github:
-    owner: octomation
-    name: go-tool #find-and-replace:template
+    owner: tact-app
+    name: fiddle

@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-# shellcheck source=../utils/print.bash # @error @fatal
+# shellcheck source=print.bash  # @error
+# shellcheck source=sed.bash    # @sed
 
 @env() {
   local op="${1:-}" key="${2:-}" value="${3:-}"
@@ -12,7 +12,7 @@
     fi
 
     if [ ! -f .env ]; then
-      @error 'file .env not found'
+      @error file .env not found
       return 1
     fi
 
@@ -27,11 +27,28 @@
 
     if [ ! -f .env ]; then
       echo "${key}=${value}" >.env
+      export "${key}"="${value}"
       return 0
     fi
 
-    # bsd vs gnu
-    sed -i '' "s/^${key}=.*/${key}=${value}/g" .env
+    if ! grep -q "^${key}=" .env; then
+      echo "${key}=${value}" >>.env
+      export "${key}"="${value}"
+      return 0
+    fi
+
+    @sed -i "s|^${key}=.*|${key}=${value}|g" .env
+    export "${key}"="${value}"
+    ;;
+
+  unset)
+    if [ ${#@} != 2 ]; then
+      @error 'usage: env unset <key>'
+      return 1
+    fi
+
+    ([ ! -f .env ] || ! grep -q "^${key}=" .env) && return 0
+    @sed -i "/^${key}=/d" .env
     ;;
 
   *)
@@ -41,8 +58,16 @@
   esac
 }
 
+@key() {
+  local name=${1}
+  name=${name// /_}
+  name=${name^^}_TOKEN
+  echo "${name}"
+}
+
 @token() {
-  local op="${1:-}" name="${2:-}" value="${3:-}" length="${3:-}"
+  local op="${1:-}" name="${2:-}" value="${3:-}" length="${3:-}" key
+  key=$(@key "${name}")
 
   case "${op}" in
   get)
@@ -51,7 +76,7 @@
       return 1
     fi
 
-    @env get "${name^^}_TOKEN"
+    @env get "${key}"
     ;;
 
   set)
@@ -60,7 +85,7 @@
       return 1
     fi
 
-    @env set "${name^^}_TOKEN" "${value}"
+    @env set "${key}" "${value}"
     ;;
 
   store)
@@ -83,10 +108,10 @@
     token=${token%% }
 
     if [ "${#token}" -ne "${length}" ]; then
-      @fatal 'token is invalid'
+      @error token is invalid
+      return 1
     fi
-    name=${name/ /}
-    @env set "${name^^}_TOKEN" "${token}"
+    @env set "${key}" "${token}"
     ;;
 
   *)

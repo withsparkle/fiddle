@@ -7,6 +7,8 @@ package tools
 import (
 	_ "github.com/golang/mock/mockgen"
 	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
+	_ "github.com/goreleaser/godownloader"
+	_ "github.com/goreleaser/goreleaser"
 	_ "github.com/MontFerret/cli/ferret"
 	_ "github.com/suntong/html2md"
 	_ "golang.org/x/tools/cmd/goimports"
@@ -15,6 +17,8 @@ import (
 
 //go:generate go install github.com/golang/mock/mockgen
 //go:generate go install github.com/golangci/golangci-lint/cmd/golangci-lint
+//go:generate go install github.com/goreleaser/godownloader
+//go:generate go install github.com/goreleaser/goreleaser
 //go:generate go install github.com/MontFerret/cli/ferret
 //go:generate go install github.com/suntong/html2md
 //go:generate go install golang.org/x/tools/cmd/goimports

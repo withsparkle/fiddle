@@ -1,0 +1,19 @@
+---
+uid: {{ .ID }}
+url: {{ .URL }}
+tags: {{ range $tag := .Tags }}
+  - {{ $tag -}}
+{{ end }}
+{{ if .Links }}links: {{ range $link := .Links }}
+  - [{{ $link.Name }}]({{ $link.URL }}){{- end }}
+{{- end }}
+date: {{ .Date.Format "02.01.2006" }}
+---
+
+# {{ .Title }}
+
+{{ .Content | markdownify }}
+
+## Summary
+
+{{ .Summary | markdownify }}

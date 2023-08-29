@@ -1,15 +1,4 @@
-#!/usr/bin/env bash
-
-@changelog() {
-  local latest
-  latest=$(git describe --tags --abbrev=0 2>/dev/null)
-
-  git log --oneline "${latest}"... |
-    cat |
-    awk '{$1=""; print $0}' |
-    sed 's/^/-/' |
-    sort
-}
+@root() { git rev-parse --show-toplevel; }
 
 @pull() {
   local remote
@@ -31,5 +20,3 @@
     git pull --force --rebase
   fi
 }
-
-@root() { git rev-parse --show-toplevel; }
