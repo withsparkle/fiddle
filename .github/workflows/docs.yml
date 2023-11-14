@@ -40,7 +40,7 @@ jobs:
 
       - name: Cache documentation dependencies
         id: docs
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ./docs/node_modules
           key: docs-${{ hashFiles('docs/package-lock.json') }}
