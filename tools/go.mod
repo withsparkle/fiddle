@@ -1,12 +1,12 @@
 module tools
 
-go 1.21
+go 1.23
 
 require (
 	github.com/MontFerret/cli v1.11.0
 	github.com/golang/mock v1.6.0
 	github.com/golangci/golangci-lint v1.54.2
-	github.com/suntong/html2md v1.5.0
+	github.com/suntong/html2md v1.6.0
 	golang.org/x/tools v0.12.1-0.20230815132531-74c255bcf846
 	golang.org/x/vuln v1.0.1
 )
