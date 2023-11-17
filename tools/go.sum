@@ -86,8 +86,8 @@ github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEq
 github.com/antchfx/htmlquery v1.3.0 h1:5I5yNFOVI+egyia5F2s/5Do2nFWxJz41Tr3DyfKD25E=
 github.com/antchfx/htmlquery v1.3.0/go.mod h1:zKPDVTMhfOmcwxheXUsx4rKJy8KEY/PU6eXr/2SebQ8=
 github.com/antchfx/xpath v1.2.3/go.mod h1:i54GszH55fYfBmoZXapTHN8T8tkcHfRgLyVwwqzXNcs=
-github.com/antchfx/xpath v1.2.4 h1:dW1HB/JxKvGtJ9WyVGJ0sIoEcqftV3SqIstujI+B9XY=
-github.com/antchfx/xpath v1.2.4/go.mod h1:i54GszH55fYfBmoZXapTHN8T8tkcHfRgLyVwwqzXNcs=
+github.com/antchfx/xpath v1.3.6 h1:s0y+ElRRtTQdfHP609qFu0+c6bglDv20pqOViQjjdPI=
+github.com/antchfx/xpath v1.3.6/go.mod h1:i54GszH55fYfBmoZXapTHN8T8tkcHfRgLyVwwqzXNcs=
 github.com/antlr/antlr4/runtime/Go/antlr/v4 v4.0.0-20230321174746-8dcc6526cfb1 h1:X8MJ0fnN5FPdcGF5Ij2/OW+HgiJrRg3AfHAx1PJtIzM=
 github.com/antlr/antlr4/runtime/Go/antlr/v4 v4.0.0-20230321174746-8dcc6526cfb1/go.mod h1:pSwJ0fSY5KhvocuWSx4fz3BA8OrA1bQn+K1Eli3BRwM=
 github.com/ashanbrown/forbidigo v1.6.0 h1:D3aewfM37Yb3pxHujIPSpTf6oQk9sc9WZi8gerOIVIY=

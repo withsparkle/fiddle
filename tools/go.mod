@@ -37,7 +37,7 @@ require (
 	github.com/alingse/asasalint v0.0.11 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/antchfx/htmlquery v1.3.0 // indirect
-	github.com/antchfx/xpath v1.2.4 // indirect
+	github.com/antchfx/xpath v1.3.6 // indirect
 	github.com/antlr/antlr4/runtime/Go/antlr/v4 v4.0.0-20230321174746-8dcc6526cfb1 // indirect
 	github.com/ashanbrown/forbidigo v1.6.0 // indirect
 	github.com/ashanbrown/makezero v1.1.1 // indirect
