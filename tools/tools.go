@@ -8,6 +8,7 @@ import (
 	_ "github.com/golang/mock/mockgen"
 	_ "github.com/golangci/golangci-lint/cmd/golangci-lint"
 	_ "github.com/MontFerret/cli/ferret"
+	_ "github.com/suntong/html2md"
 	_ "golang.org/x/tools/cmd/goimports"
 	_ "golang.org/x/vuln/cmd/govulncheck"
 )
@@ -15,5 +16,6 @@ import (
 //go:generate go install github.com/golang/mock/mockgen
 //go:generate go install github.com/golangci/golangci-lint/cmd/golangci-lint
 //go:generate go install github.com/MontFerret/cli/ferret
+//go:generate go install github.com/suntong/html2md
 //go:generate go install golang.org/x/tools/cmd/goimports
 //go:generate go install golang.org/x/vuln/cmd/govulncheck
