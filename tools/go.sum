@@ -630,8 +630,8 @@ github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcU
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/subosito/gotenv v1.4.2 h1:X1TuBLAMDFbaTAChgCBLu3DU3UPyELpnF2jjJ2cz/S8=
 github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNGqEflhK0=
-github.com/suntong/html2md v1.1.1 h1:dXjVlcZ61z4RUzceRpDrCdkZlBITDe0qFWFFI6MHmbs=
-github.com/suntong/html2md v1.1.1/go.mod h1:AGJDgYQCqA41k/wdnGinYjMZd+TtS3LeZxJmv5+Otks=
+github.com/suntong/html2md v1.1.2 h1:5o07+5+g1Vzjd4R/xV3CX5jX39HDJSlAcoR0tvBI4NU=
+github.com/suntong/html2md v1.1.2/go.mod h1:AGJDgYQCqA41k/wdnGinYjMZd+TtS3LeZxJmv5+Otks=
 github.com/t-yuki/gocover-cobertura v0.0.0-20180217150009-aaee18c8195c h1:+aPplBwWcHBo6q9xrfWdMrT9o4kltkmmvpemgIjep/8=
 github.com/t-yuki/gocover-cobertura v0.0.0-20180217150009-aaee18c8195c/go.mod h1:SbErYREK7xXdsRiigaQiQkI9McGRzYMvlKYaP3Nimdk=
 github.com/tdakkota/asciicheck v0.2.0 h1:o8jvnUANo0qXtnslk2d3nMKTFNlOnJjRrNcj0j9qkHM=
