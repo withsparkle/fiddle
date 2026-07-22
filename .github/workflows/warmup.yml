@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with: { fetch-depth: 0 }
       - name: Set up Go environment
         uses: actions/setup-go@v7
@@ -41,7 +41,7 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with: { fetch-depth: 0 }
       - name: Set up Go environment
         uses: actions/setup-go@v7
@@ -57,7 +57,7 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with: { fetch-depth: 0 }
       - name: Define notification message
         id: message
